@@ -56,6 +56,11 @@ body {
     background-color: $BlackColor;
 }
 
+section {
+    margin: 0;
+    padding: 0;
+}
+
 
 //оболочка =========================================================
 
@@ -105,5 +110,8 @@ body {
 
 //подключение блоков ==============================================
 @import 'header';
+@import 'steps';
+@import 'about';
+@import 'result';
 
 

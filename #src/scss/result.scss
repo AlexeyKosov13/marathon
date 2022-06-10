@@ -1,0 +1,78 @@
+.result {
+    background: url("../img/bg/bg4.jpg");
+    background-repeat: no-repeat;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__descr {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 650px;
+        margin-top: 60px;
+        font-style: italic;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__block {
+        margin-top: 130px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+        .itemA {
+            align-self: start;
+            position: relative;
+            img {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+        }
+    }
+
+    &__item {
+        width: 440px;
+       
+        margin: 20px;
+        padding: 15px;
+        background: #E1E1E1;
+        border-radius: 11px;
+
+        h3 {
+            font-family: 'gothicBold';
+            font-style: italic;
+            font-size: 25px;
+            line-height: 31px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #4B4B4B;
+        }
+
+        ul {
+            font-size: 14px;
+            line-height: 17px;    
+            color: #4B4B4B; 
+            list-style-type: none;
+
+            li {
+                list-style-image: url(images/Star.png);
+            }
+        }
+
+
+    }
+
+}
