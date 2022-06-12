@@ -46,3 +46,40 @@
     
 
 }
+
+@media (max-width: 992px) {
+   
+}
+
+  
+@media (max-width: 768px) {
+    .footer {
+        &__made {
+            font-size: 12px;
+        }
+
+        &__politic {
+            font-size: 10px;
+        }
+    }
+  
+}
+
+@media (max-width: 576px) {
+    .footer {
+
+        &__block {
+            flex-direction: column;
+        }
+
+        &__made {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+ 
+  
+@media (min-width: 360px) {
+  
+}

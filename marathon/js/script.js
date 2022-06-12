@@ -204,11 +204,6 @@ const plus = document.querySelectorAll(".plus");
 plus.forEach((item) => {
   item.addEventListener("click", (e)=> {
     e.target.classList.toggle("active");
-    if(e.target.classList.contains("active")) {
-        e.target.src = "img/close.svg";
-    } else {
-        e.target.src = "img/plus.svg";
-    }
       let panel = e.target.parentNode.nextElementSibling;
       console.log(panel);
       if (panel.style.maxHeight) {

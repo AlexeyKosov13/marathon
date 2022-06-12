@@ -144,3 +144,36 @@ header {
         opacity: .99;
     }
 }
+
+
+  
+@media (max-width: 992px) {
+   
+}
+
+  
+@media (max-width: 768px) {
+   .header {
+    justify-content: center;
+    position: relative;
+
+    &__name {
+        display: none;
+    }
+
+    &__time {
+        position: absolute;
+        right: 0;
+        
+    }
+   }
+}
+
+@media (max-width: 576px) {
+
+}
+ 
+  
+@media (max-width: 360px) {
+  
+}

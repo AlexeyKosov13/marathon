@@ -18,13 +18,15 @@
 
     &__clouds {
         position: absolute;
-        bottom: -300px;
+        bottom: -230px;
         left: 0;
+        height: 600px;
+        width: 100%;
     }
 }
 
 .question {
-    width: 900px;
+    width: 800px;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -43,6 +45,7 @@
         cursor: pointer;
         width: 40px;
         height: 40px;
+        transition: all 0.5s ease;
     }
 
 
@@ -55,7 +58,7 @@
 }
 
 .answer {
-    width: 800px;
+    width: 700px;
     display: flex;
     font-size: 14px;
     line-height: 17px;
@@ -68,5 +71,119 @@
     overflow: hidden;
     transition: all 0.3s ease-out;
 }
+
+.active {
+    transform: rotate(45deg);
+}
+
+
+@media (max-width: 992px) {
+
+    .question {
+        width: 700px;
+    }
+
+    .answer {
+        width: 600px;
+    }
+
+  }
+
+@media (max-width: 768px) {
+
+    .questions {
+        
+        &__clouds {
+        height: 400px;
+        bottom: -200px;
+        }
+
+        &__block {
+            margin-bottom: 180px;
+        }
+}
+
+    .question {
+        width: 500px;
+        padding: 20px 30px;
+        font-size: 16px;   
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+     }
+
+    .answer {
+        width: 450px;
+    }
+
+  }
+
+@media (max-width: 576px) {
+
+    .questions {
+        
+        &__clouds {
+        height: 300px;
+        bottom: -150px;
+        }
+
+        &__block {
+            margin-bottom: 100px;
+        }
+}
+
+
+    .question {
+        width: 350px;
+        padding: 10px 20px;
+        font-size: 12px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .answer {
+        width: 300px;
+    }
+  }
+  
+
+  
+ 
+@media (max-width: 360px) {
+
+    .questions {
+        
+        &__clouds {
+        height: 150px;
+        bottom: -70px;
+        }
+
+        &__block {
+            margin-bottom: 70px;
+        }
+}
+
+
+    .question {
+        width: 300px;
+        padding: 5px 10px;
+        font-size: 8px;
+
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .answer {
+        width: 250px;
+        font-size: 8px;
+    }
+  }
 
 
