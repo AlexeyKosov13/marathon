@@ -1,6 +1,7 @@
 .steps {
     background: url('../img/bg/bg2.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 
     padding-top: 150px;
     &__items {
@@ -8,7 +9,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         padding-top: 90px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
 
     }
 

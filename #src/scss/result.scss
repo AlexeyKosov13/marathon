@@ -1,6 +1,7 @@
 .result {
     background: url("../img/bg/bg4.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 
     &__title {
         text-align: center;
@@ -24,7 +25,7 @@
 
     &__block {
         margin-top: 130px;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,11 +35,22 @@
             align-self: start;
             position: relative;
             img {
-                width: 100px;
-                height: 100px;
+                width: 150px;
+                height: 150px;
                 position: absolute;
-                left: 0px;
-                bottom: 0px;
+                left: -80px;
+                bottom: -60px;
+            }
+        }
+
+        .itemB {
+            position: relative;
+            img {
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                right: -80px;
+                top: -60px;
             }
         }
     }

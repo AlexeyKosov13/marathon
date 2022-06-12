@@ -1,0 +1,48 @@
+.footer {
+
+    &__block {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 155px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 5.33549px;
+            line-height: 8px;
+            letter-spacing: 0.305em;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+    }
+
+    &__made {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__politic {
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+    
+
+}
