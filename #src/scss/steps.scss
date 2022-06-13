@@ -2,11 +2,10 @@
     background: url('../img/bg/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
     padding-top: 150px;
     &__items {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         padding-top: 90px;
         padding-bottom: 50px;
@@ -19,8 +18,8 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 278px;
-        min-height: 268px;
+        width: 220px;
+        
         border: 1px solid #454545;
         border-radius: 11px;
         padding: 22px 34px;
