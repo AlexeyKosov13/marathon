@@ -77,17 +77,18 @@
         width: 66px;
         height: 66px;
         background: linear-gradient(133.24deg, #D2A6FF 0%, #C6C8FF 31.15%, #FF84DD 69.78%, #E4C554 100%);
-        box-shadow: 0px 0px 11px #D2A6FF;
+        box-shadow: 0px 0px 4px #D2A6FF;
         border-radius: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 15px;
-        transition: all 0.5 ease;
+        transition: all 0.5s;
         cursor: pointer;
 
         &:hover {
-            box-shadow: 0px 0px 5px #D2A6FF;
+            background: linear-gradient(133.24deg, #D2A6FF 0%, #C6C8FF 31.15%, #FF84DD 69.78%, #E4C554 100%);
+            box-shadow: 0px 0px 11px #d6b0fc;
         }
 
         img {
@@ -99,7 +100,7 @@
 
     &__btn {
         background: #D9E454 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);;
-        box-shadow: 0px 0px 11px #D9E454;
+        box-shadow: 0px 0px 4px #D9E454;
         border-radius: 5px;
         padding: 25px 33px;
         font-family: 'MontserratLight';
@@ -111,7 +112,8 @@
         color: #515151;
 
         &:hover {
-            box-shadow: 0px 0px 5px #D9E454;
+            background: #f2ff60 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+            box-shadow: 0px 0px 11px #e8f55b;
         }
     }
 

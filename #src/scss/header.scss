@@ -82,6 +82,10 @@ header {
     flex-direction: column;
     position: relative;
 
+    &__btn {
+        margin-top: 50px;
+    }
+
     h1 {
         margin-top: 80px;
         margin-bottom: 0;
@@ -112,6 +116,7 @@ header {
     }
 
     &__block {
+        position: relative;
         width: 250px;
         margin-top: 50px;
         font-weight: 400;
@@ -125,24 +130,19 @@ header {
         border-radius: 3px;
         
         p {
-        transform: matrix(1.2,0,0.3,1.2,20,0);
+            transform: matrix(1.2,0,0.3,1.2,20,0);
         }
     }
 
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 228px;
-        height: 63px;
-        margin-top: 50px;
-        cursor: pointer;
-        background: #D9E454 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
-        box-shadow: 0px 0px 11px #D9E454;
-        border-radius: 5px;
-        z-index: 10;
-        text-decoration: none;   
+    &__sign {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        left: -90px;
+        bottom: -50px;
+        transform: matrix(1.2,0,0.3,1.2,20,0);
     }
+
 
     &__girl {
         position: absolute;

@@ -1,23 +1,22 @@
 //====================popup==================
-// let modal = document.querySelector('.modalWindow');
-// let img = document.querySelectorAll('.popup_img');
-// let close = document.querySelector('.close');
-// let popup = document.querySelector('.popup');
+let modal = document.querySelector('.modal');
+let btn = document.querySelectorAll('.popup_btn');
+let close = document.querySelector('.modal__close');
+let popup = document.querySelector('.modal__content');
 
-// for (let i = 0; i < img.length; i++) {
-//     img[i].addEventListener('click', function(){
-//         modal.style.display = 'block';
-//         popup.src = this.id;
-//     });
-// }
-// close.onclick = function () {
-//     modal.style.display = 'none';
-// }
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//       modal.style.display = "none";
-//     }
-// }
+for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click', function(){
+      modal.style.display = 'block';
+    });
+}
+close.onclick = function () {
+  modal.style.display = 'none';
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+}
 
 //===========================
 

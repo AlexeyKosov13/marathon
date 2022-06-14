@@ -98,15 +98,147 @@ section {
 // @import "forms";
 @import "ui";
 
-.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;background-color:rgba(0,0,0,.5)}
-.modal__dialog{max-width:500px;margin:40px auto}
-.modal__content{position:relative;width:100%;padding:40px;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:4px;max-height:80vh;overflow-y:auto}
-.modal__close{position:absolute;top:8px;right:14px;font-size:30px;color:#000;opacity:.5;font-weight:700;border:none;background-color:transparent;cursor:pointer}
-.modal__title{text-align:center;font-size:22px;text-transform:uppercase}
-.modal__input{display:block;margin:20px auto 20px auto;width:280px;height:50px;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.2);border:none;font-size:18px;text-align:center;padding:0 20px;outline:0}
-.modal .btn{display:block;width:280px;margin:0 auto}
-.hide{display:none;}
-.show{display:block;}
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1050;
+    display:none;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-color:rgba(0,0,0,.5)
+}
+
+.modal__dialog{
+    max-width:500px;
+    margin:40px auto
+}
+
+.modal__content{
+    position:relative;
+    width:500px;
+    padding:30px;
+    background-color:#fff;
+    color:#000;
+    border:1px solid rgba(0,0,0,.2);
+    border-radius:4px;
+    max-height:80vh;
+    overflow-y:auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+}
+
+// .popup_btn:active ~ .modal__content {
+//     opacity: 1;
+//     transform: scale(1);
+//     transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+//   }
+
+.modal__title {
+    font-family: 'MontserratBold';
+    font-size: 26px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #383838;
+    padding-bottom: 0;
+    margin-bottom: 9px;
+}
+
+.modal__subtitle {
+    text-align: center;
+    font-family: 'gothic';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #383838;
+
+    span {
+        font-family: 'gothicBold';
+        font-style: normal;
+    }
+}
+
+.modal__text {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #383838;
+
+    span {
+        font-family: 'gothicBold';
+    }
+}
+
+
+
+.modal__close{
+    position:absolute;
+    top:8px;
+    right:14px;
+    font-size:30px;
+    color:#000;
+    opacity:.5;
+    font-weight:700;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+form {
+    margin-top: 40px;
+
+  
+}
+
+label {
+    font-size: 14px;
+    line-height: 17px;
+    color: #383838;
+}
+
+
+.modal__input{
+    display:block;
+    margin:10px auto 20px auto;
+    width:90%;
+    height:50px;
+    background: #EFEFEF;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+    border:none;
+    font-size:18px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    outline:0;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 15px;
+        color: #A4A4A4;
+        text-align: left;
+        padding-left: 15px;
+    }
+}
+
+.modal__btn {
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.hide{
+    display:none;
+}
+
+
 
 //подключение блоков ==============================================
 @import 'header';

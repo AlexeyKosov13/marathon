@@ -1,19 +1,22 @@
 .btn {
-    display: inline-block;
+    display: flex;
     align-items: center;
-    text-align: center;
-    line-height: 17px;
-    letter-spacing: 0.1em;
-    color: #515151;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    
+    justify-content: center;
+    width: 228px;
+    height: 63px;
+    cursor: pointer;
+    background: #D9E454 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 0px 4px #c4cf4d;
+    border-radius: 5px;
+    z-index: 10;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+
     &:hover {
-        filter: none;
-        
-    }
+        background: #f2ff60 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0px 0px 11px #e8f55b;
+    }   
 }
 
 .btn__play {

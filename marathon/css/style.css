@@ -469,20 +469,24 @@ section {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
   align-items: center;
-  text-align: center;
-  line-height: 17px;
-  letter-spacing: 0.1em;
-  color: #515151;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  justify-content: center;
+  width: 228px;
+  height: 63px;
+  cursor: pointer;
+  background: #D9E454 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 4px #c4cf4d;
+  border-radius: 5px;
+  z-index: 10;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
 }
 
 .btn:hover {
-  filter: none;
+  background: #f2ff60 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 11px #e8f55b;
 }
 
 .btn__play {
@@ -628,13 +632,58 @@ section {
 
 .modal__content {
   position: relative;
-  width: 100%;
-  padding: 40px;
+  width: 500px;
+  padding: 30px;
   background-color: #fff;
+  color: #000;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   max-height: 80vh;
   overflow-y: auto;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+}
+
+.modal__title {
+  font-family: "MontserratBold";
+  font-size: 26px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #383838;
+  padding-bottom: 0;
+  margin-bottom: 9px;
+}
+
+.modal__subtitle {
+  text-align: center;
+  font-family: "gothic";
+  font-style: italic;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #383838;
+}
+
+.modal__subtitle span {
+  font-family: "gothicBold";
+  font-style: normal;
+}
+
+.modal__text {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #383838;
+}
+
+.modal__text span {
+  font-family: "gothicBold";
 }
 
 .modal__close {
@@ -650,38 +699,47 @@ section {
   cursor: pointer;
 }
 
-.modal__title {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
+form {
+  margin-top: 40px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #383838;
 }
 
 .modal__input {
   display: block;
-  margin: 20px auto 20px auto;
-  width: 280px;
+  margin: 10px auto 20px auto;
+  width: 90%;
   height: 50px;
-  background: #fff;
+  background: #EFEFEF;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: none;
   font-size: 18px;
-  text-align: center;
-  padding: 0 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
   outline: 0;
 }
 
-.modal .btn {
-  display: block;
-  width: 280px;
+.modal__input::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #A4A4A4;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.modal__btn {
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 .hide {
   display: none;
-}
-
-.show {
-  display: block;
 }
 
 header {
@@ -772,6 +830,10 @@ header {
   position: relative;
 }
 
+.main__btn {
+  margin-top: 50px;
+}
+
 .main h1 {
   margin-top: 80px;
   margin-bottom: 0;
@@ -801,6 +863,7 @@ header {
 }
 
 .main__block {
+  position: relative;
   width: 250px;
   margin-top: 50px;
   font-weight: 400;
@@ -818,19 +881,13 @@ header {
   transform: matrix(1.2, 0, 0.3, 1.2, 20, 0);
 }
 
-.main__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 228px;
-  height: 63px;
-  margin-top: 50px;
-  cursor: pointer;
-  background: #D9E454 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0px 0px 11px #D9E454;
-  border-radius: 5px;
-  z-index: 10;
-  text-decoration: none;
+.main__sign {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: -90px;
+  bottom: -50px;
+  transform: matrix(1.2, 0, 0.3, 1.2, 20, 0);
 }
 
 .main__girl {
@@ -1214,18 +1271,19 @@ header {
   width: 66px;
   height: 66px;
   background: linear-gradient(133.24deg, #D2A6FF 0%, #C6C8FF 31.15%, #FF84DD 69.78%, #E4C554 100%);
-  box-shadow: 0px 0px 11px #D2A6FF;
+  box-shadow: 0px 0px 4px #D2A6FF;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
-  transition: all 0.5 ease;
+  transition: all 0.5s;
   cursor: pointer;
 }
 
 .timer__instagram:hover {
-  box-shadow: 0px 0px 5px #D2A6FF;
+  background: linear-gradient(133.24deg, #D2A6FF 0%, #C6C8FF 31.15%, #FF84DD 69.78%, #E4C554 100%);
+  box-shadow: 0px 0px 11px #d6b0fc;
 }
 
 .timer__instagram img {
@@ -1235,7 +1293,7 @@ header {
 
 .timer__btn {
   background: #D9E454 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0px 0px 11px #D9E454;
+  box-shadow: 0px 0px 4px #D9E454;
   border-radius: 5px;
   padding: 25px 33px;
   font-family: "MontserratLight";
@@ -1248,7 +1306,8 @@ header {
 }
 
 .timer__btn:hover {
-  box-shadow: 0px 0px 5px #D9E454;
+  background: #f2ff60 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 48.33%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 11px #e8f55b;
 }
 
 .timer__action {
