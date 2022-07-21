@@ -12,6 +12,7 @@ header {
 
     &__clouds {
         position: absolute;
+        width: 100%;
         left: 0;
         height: 450px;
         bottom: -240px;
@@ -84,6 +85,7 @@ header {
 
     &__btn {
         margin-top: 50px;
+        color: #000;
     }
 
     h1 {

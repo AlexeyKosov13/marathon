@@ -758,6 +758,7 @@ header {
 
 .header__clouds {
   position: absolute;
+  width: 100%;
   left: 0;
   height: 450px;
   bottom: -240px;
@@ -832,6 +833,7 @@ header {
 
 .main__btn {
   margin-top: 50px;
+  color: #000;
 }
 
 .main h1 {
